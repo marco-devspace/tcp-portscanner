@@ -1,52 +1,48 @@
-# TCP Port Scanner
+# TCP-Portscanner
 
-A personal cybersecurity project written in Python for analyzing open TCP ports and available network services.
+Ein in Python entwickeltes Projekt zur Untersuchung offener TCP-Ports und erreichbaren Netzwerkdiensten.
 
+## Funktionen
 
-## Features
+- Scannen von TCP-Ports
+- Erkennen offener Ports
+- Zuordnung zu gängigen Netzwerkdiensten
+- Parallele Scans mit mehreren Threads
+- Einstellbare Portbereiche und Timeouts
+- Bedienung über die Kommandozeile (CLI)
 
-- TCP port scanning
-- Detection of open ports
-- Identification of common services
-- Multi-threaded scanning to improve performance
-- Configurable port ranges and timeouts
-- Command-line interface (CLI)
+## Verwendung
 
-## Usage
+Einen einfachen Scan starten:
 
-Basic scan:
 ```bash
 python3 main.py 127.0.0.1
 ```
-Scan a custom port range:
+
+Einen bestimmten Portbereich scannen:
+
 ```bash
 python3 main.py 127.0.0.1 -s 1 -e 1024
 ```
-Change the number of threads:
+
+Die Anzahl der verwendeten Threads festlegen:
+
 ```bash
 python3 main.py 127.0.0.1 -t 100
 ```
 
-## Technologies
+## Technologien
 
 - Python
 - TCP/IP
-- Network communication
+- Netzwerkkommunikation
 
+## Lernziele
 
-## Learning Goals
+Im Fokus des Projekts stehen folgende Themenbereiche:
 
-This project was created to strengthen practical knowledge in:
-
-- Network Security
-- Network Analysis
-- Python Programming
-- TCP/IP Communication
-- Cybersecurity Fundamentals
-
-
-## Disclaimer
-
-This project is intended for educational purposes only.
-
-Only scan systems and networks where you have explicit permission.
+- Netzwerksicherheit
+- Analyse von Netzwerken und Netzwerkdiensten
+- Programmierung mit Python
+- Kommunikation über TCP/IP
+- Grundlagen der IT-Sicherheit
